@@ -1,0 +1,181 @@
+ubuntu@ubuntu-vbox:~/Desktop/Blockchain Nanodegree/Week3/Project_5_Starter_Code$ truffle develop
+You can improve web3's peformance when running Node.js versions older than 10.5.0 by installing the (deprecated) scrypt package in your project
+You can improve web3's peformance when running Node.js versions older than 10.5.0 by installing the (deprecated) scrypt package in your project
+Truffle Develop started at http://127.0.0.1:9545/
+
+Accounts:
+(0) 0xd58163d548a614fc04f4a8b7f4b3b91a87da28a5
+(1) 0x3a301255f6519933d9e4c4a1b1edbcfb0d9fb061
+(2) 0x5ab95bda6bb268140dd6917f3f018a088cd32510
+(3) 0xd18159ae8e83edca92b6b4e292c08a40445ce004
+(4) 0xd3932bb508b3cdfba68ce442b3eced2c1579d5fd
+(5) 0xb0ba54b7ad9d826f78145464c266f7822792082e
+(6) 0xc136f67e7349a420c564d75a79d131fb0868c344
+(7) 0x52fb5fe5159636fdf372ff817250f7bb62a68823
+(8) 0x05cd406173269a8678b25e125083e25df966c958
+(9) 0x66034df60d7d88c96ef6a70e85a74753a128631c
+
+Private Keys:
+(0) 0847bfb94175d61edf2febf9b38ca169114496aab5eea72207a85342540c36ec
+(1) d4f396d315935d97a1ad2accf2e9dd3e2bd745fd51ce8bc245906c82367e96cd
+(2) 44242097026349db100323c207856c8dc8d399bb244d4b1f71860681e20387bd
+(3) d7d142961be7ea33271a16bdf138156a6288a6299b569c40c9b7c279562460fd
+(4) f61a22d825bae5f3d81ed764a1ed7cea864c480317ec551fcdda9a089a034e89
+(5) 0eb01114f68dfb7104aeeab4b156630323160b8842fe869bf5ccbcb97611ab0e
+(6) ec82b07da3a8ec679126bb203982f48826fd0c20e76c64589243c29a8fb5e4d2
+(7) 8d0b0bbf5e3fce5b68325dd042e646530d95b3262787ec2c2cc3206083105a62
+(8) f880b9734282a8767aba170f32a6a634ff64a7cce93adaa52a8cf6d3c536ae4c
+(9) f955e38dfa1c26e68039197b51dfadd35d85d7b3696b3606ea5564b40ae0cc3d
+
+Mnemonic: execute crawl clap that dinosaur survey twenty abandon mimic december unit zebra
+
+⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
+Ensure you do not use it on production blockchains, or else you risk losing funds.
+
+truffle(develop)> compile
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+truffle(develop)> test
+Using network 'develop'.
+
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+  ✓ can Create a Star (309ms)
+  ✓ lets user1 put up their star for sale (406ms)
+  ✓ lets user1 get the funds after the sale (414ms)
+  ✓ lets user2 buy a star, if it is put up for sale (649ms)
+  ✓ lets user2 buy a star and decreases its balance in ether (407ms)
+  ✓ can add the star name and star symbol properly (261ms)
+  ✓ lets 2 users exchange stars (657ms)
+  ✓ lets a user transfer a star (256ms)
+  ✓ lookUptokenIdToStarInfo test (189ms)
+
+  9 passing (4s)
+
+truffle(develop)> migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        6309798
+   > block timestamp:     1586802225
+   > account:             0x7734bF52F5F4C2278d3bA2B6f0C2Fa76d2356273
+   > balance:             7.48439659
+   > gas used:            210237 (0x3353d)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00210237 ETH
+
+   -------------------------------------
+   > Total cost:          0.00210237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > block number:        6309800
+   > block timestamp:     1586802254
+   > account:             0x7734bF52F5F4C2278d3bA2B6f0C2Fa76d2356273
+   > balance:             7.46119254
+   > gas used:            2293042 (0x22fd32)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02293042 ETH
+
+   -------------------------------------
+   > Total cost:          0.02293042 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02503279 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x046c6d841aea98e15774d923ecc4c1d13028745e5dbc71c9fa38636a5e202144
+   > Blocks: 0            Seconds: 13
+   > contract address:    0x475466bAd4cF23a0602f3793e5E8870C3011fB03
+   > block number:        6309802
+   > block timestamp:     1586802290
+   > account:             0x7734bF52F5F4C2278d3bA2B6f0C2Fa76d2356273
+   > balance:             7.48424659
+   > gas used:            225237 (0x36fd5)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00225237 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00225237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > transaction hash:    0x446684fad97105b4f59f05bbc0d787e16a74df6b3a8d3757c153043f9c5640cb
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x86C97Eb0E29De9CA9cC7c71898fA641a85724353
+   > block number:        6309804
+   > block timestamp:     1586802320
+   > account:             0x7734bF52F5F4C2278d3bA2B6f0C2Fa76d2356273
+   > balance:             7.46059254
+   > gas used:            2323042 (0x237262)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02323042 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02323042 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02548279 ETH
